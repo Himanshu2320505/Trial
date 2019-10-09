@@ -13,7 +13,7 @@ import com.crm.utilities.TestUtil;
 
 public class TestBase {
 
-public	static WebDriver driver;
+public static	 WebDriver driver;
 public	static Properties prop;
 
 	public TestBase()
@@ -44,7 +44,7 @@ public	static Properties prop;
 					"C:\\Users\\HIMANSHU SEKHARDAS\\WORKAA\\chromedriver_win32\\chromedriver.exe");
 			
 		}
-			WebDriver driver = new ChromeDriver();
+			 driver = new ChromeDriver();
 			driver.manage().window().maximize();
 			driver.manage().deleteAllCookies();
 			 driver.manage().timeouts().pageLoadTimeout(TestUtil.PAGE_LOAD_TIMEOUT , TimeUnit.SECONDS); // .utilities
@@ -57,7 +57,3 @@ public	static Properties prop;
 		
 		
 	}
-
-
-
-
