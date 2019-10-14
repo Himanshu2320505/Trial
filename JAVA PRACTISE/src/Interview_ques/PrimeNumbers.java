@@ -4,6 +4,7 @@ public class PrimeNumbers {
 
 	public static void main(String[] args) {
 		int count, num;
+		
 		String Primenumber = "";
 		for (int i = 1; i <= 100; i++) {
 			count = 0;
