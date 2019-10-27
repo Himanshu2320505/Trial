@@ -26,7 +26,7 @@ public class LoginPageTest extends TestBase {
 	}
 
 	@Test(priority = 1)
-	public void LoginPageTestmethod() { // constructor
+	public void LoginPageTitleTestmethod() { // constructor
 		String title = loginPage.validateLoginPageTitle();
 		Assert.assertEquals(title, "Cogmento CRM");
 
@@ -41,6 +41,6 @@ public class LoginPageTest extends TestBase {
 
 	@AfterMethod
 	public void tearDown() {
-		driver.close();
+		driver.quit();
 	}
 }

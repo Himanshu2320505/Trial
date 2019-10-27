@@ -20,13 +20,17 @@ public class HomePage extends TestBase {
 	WebElement taskssLink;
 
 //Initializing the Page Objects
-	public HomePage() {
+	public HomePage() {// constructor to initialize homePage 
 		PageFactory.initElements(driver, this);
 	}
 
 	public String verifyHomePageTitle() {
 		return driver.getTitle();
 	}
+	
+	public boolean verifyCorrectUserName() {
+		return userNameLabel.isDisplayed();
+		}
 
 	public ContactPage clickOnContactsLink() {
 		contactsLink.click();
@@ -42,5 +46,7 @@ public class HomePage extends TestBase {
 		taskssLink.click();
 		return new Tasks();
 	}
+	
+	
 
 }

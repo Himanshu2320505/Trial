@@ -9,7 +9,7 @@ import com.crm.qa.base.TestBase;
 
 public class LoginPage extends TestBase {
 	
-	//Page Factories or Page repositories
+	//Page Factories or Page repositories-OR
 	@FindBy(name="email")
 	WebElement username ;
 	
@@ -24,10 +24,10 @@ public class LoginPage extends TestBase {
 
 	//initializing the page objects 
 	public LoginPage() { //constructor
-		PageFactory.initElements(driver, this);// thhrough initElements we initiazlize page factories
+  		PageFactory.initElements(driver, this);// thhrough initElements we initiazlize page factories
 	}
 	
-	//actions(different features available on login page)
+	//actions(different features available on login page) 
 	public String validateLoginPageTitle() {
 		String title  = driver.getTitle();
 		return title;

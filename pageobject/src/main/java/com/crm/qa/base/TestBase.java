@@ -22,7 +22,7 @@ public	static Properties prop;
 		try {
 			
 			prop = new Properties();
-			FileInputStream fis = new FileInputStream("C:\\Users\\HIMANSHU SEKHARDAS\\eclipse-workspaceNEW\\pageobject\\src\\main\\java\\com\\crm\\config\\config.properties");
+			FileInputStream fis = new FileInputStream("C:\\Users\\HIMANSHU SEKHARDAS\\git\\repository\\pageobject\\src\\main\\java\\com\\crm\\config\\config.properties");
 			prop.load(fis);
 			
 			}
@@ -42,13 +42,14 @@ public	static Properties prop;
 		if (browsername.equals("chrome")) {
 			System.setProperty("webdriver.chrome.driver",
 					"C:\\Users\\HIMANSHU SEKHARDAS\\WORKAA\\chromedriver_win32\\chromedriver.exe");
+			driver = new ChromeDriver();
 			
 		}
-			 driver = new ChromeDriver();
+			 
 			driver.manage().window().maximize();
 			driver.manage().deleteAllCookies();
-			 driver.manage().timeouts().pageLoadTimeout(TestUtil.PAGE_LOAD_TIMEOUT , TimeUnit.SECONDS); // .utilities
-			 driver.manage().timeouts().implicitlyWait(TestUtil.IMPLICIT_WAIT , TimeUnit.SECONDS); //utilities
+			 driver.manage().timeouts().pageLoadTimeout(TestUtil.PAGE_LOAD_TIMEOUT , TimeUnit.SECONDS); // .utilities class
+			 driver.manage().timeouts().implicitlyWait(TestUtil.IMPLICIT_WAIT , TimeUnit.SECONDS); //utilities class
 			driver.get(prop.getProperty("url"));
 			
 		}
