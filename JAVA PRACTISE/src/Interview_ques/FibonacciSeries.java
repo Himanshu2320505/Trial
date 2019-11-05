@@ -3,7 +3,7 @@ package Interview_ques;
 public class FibonacciSeries {
 	public static void main(String[] args) {
 
-		int a = 0, b = 1, c, count = 10;
+		int a = 0, b = 1, c, count = 20;
 
 		System.out.print(a + " " + b);
 
